@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+  <!-- "head": décrit des données à propos de la page. -->
+  <head>
+    <!--
+      "style": À l'intérieur de cet élément, on met du code CSS, qui est un
+      petit langage permettant d'altérer l'apparence de certains éléments.
+
+      Ici, on démontre comment écrire une "classe". Une classe CSS est un
+      regroupement de déclarations de style. Par exemple, la classe
+      "mettre-un-fond-bleu-et-du-texte-vert" ci-dessous met un fond bleu
+      et du texte vert à tout élément qui a comme classe
+      "mettre-un-fond-bleu-et-du-texte-vert".
+
+      Un élément n'est pas obligé d'avoir une classe, mais peut en avoir
+      une ou plusieurs.
+    -->
+    <style>
+      /*
+        Ceci est un commentaire en CSS. Les commentaires sont ignorés.
+      */
+
+      .mettre-un-fond-bleu-et-du-texte-vert {
+        background: rgb(0, 0, 255); /* 0% de rouge, 0% de vert, 100% de bleu */
+        color: rgb(0, 255, 0); /* 0% de rouge, 100% de vert, 0% de bleu */
+      }
+
+      .mettre-une-bordure-pseudo-3d {
+        border: rgb(255, 0, 0) 4px outset; /* Une bordure rouge de 4 pixels
+                                                d'épaisseur qui donne l'impression
+                                                de sortir de la page. */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Démonstration d'une classe CSS</h1>
+
+    <!-- Aucun style -->
+    <p>Aucun style - Voix ambiguë d'un coeur...</p>
+
+    <!-- Modification de l'apparence en utilisant une classe CSS -->
+    <p class="mettre-un-fond-bleu-et-du-texte-vert">Style avec une classe CSS - Voix ambiguë d'un coeur...</p>
+
+    <!--
+      L'apparence peut aussi être modifiée directement avec la propriété "style",
+      mais ça risque d'être redondant si on a besoin de ce style partout.
+    -->
+    <p style="background: rgb(0, 0, 255); color: rgb(0, 255, 0);">Style avec la propriété "style" - Voix ambiguë d'un coeur...</p>
+
+    <!-- Un élément peut avoir plusieurs classes -->
+    <p class="mettre-une-bordure-pseudo-3d mettre-un-fond-bleu-et-du-texte-vert">Deux classes - Voix ambiguë d'un coeur...</p>
+  </body>
+</html>
