@@ -18,6 +18,6 @@ Par la suite, nous utiliserons une technologie s'appelant [Electron](https://ele
 
 ## Quoi installer ?
 
-En soi, rien n'est vraiment nécessaire pour démarrer, puisque la plupart du travail se fera dans des fichiers texte qui pourraient être modifiés avec le Bloc-Notes de Windows (berk!) ou équivalent sur un autre système. Mais il vaut mieux utiliser un éditeur de texte pour programmation, comme [VSCode](https://code.visualstudio.com) ou [Notepad++](https://notepad-plus-plus.org/), puisque ces éditeurs aident à mieux visualiser et modifier le contenu des fichiers.
+Lorsque nous parlerons d'Electron, nous verrons comment l'installer, mais, en soi, rien n'est vraiment nécessaire pour démarrer. La plupart du travail se fera dans des fichiers texte qui pourraient être modifiés avec le Bloc-Notes de Windows (berk!) ou équivalent sur un autre système. Mais il vaut mieux utiliser un éditeur de texte pour programmation, comme [VSCode](https://code.visualstudio.com) ou [Notepad++](https://notepad-plus-plus.org/), puisque ces éditeurs aident à mieux visualiser et modifier le contenu des fichiers.
 
-À noter qu'avec VSCode, on peut mieux visualiser les fichiers `README.md` en les ouvrant puis en faisant CTRL+SHIFT+V.
+À noter qu'avec VSCode, on peut mieux visualiser les fichiers `README.md` en les ouvrant puis en faisant CTRL+SHIFT+V, ou en faisant un clic droit sur l'onglet de ce fichier et en sélectionnant _"Open preview"_.
