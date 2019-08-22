@@ -24,4 +24,6 @@ Sur un colis à la poste, y est certes inscrit son nom, ici 'p' par exemple, mai
 
 Un dernier détail: lorsqu'une "boîte" est vide, plutôt que d'écrire: `<ma-boite></ma-boite>`, on peut aussi écrire, pour faire court: `<ma-boîte/>`. Cela explique le fait que la fin de ligne (`<br/>`) soit écrite comme ça.
 
-Question nommenclature, ce qu'on a appelé une "boîte" est en fait un "élément" et les inscriptions sur la boîte (comme `style`) sont ses "propriétés". Un élément à l'intérieur d'un autre élément (comme `body` comparativement à `html`) est un "enfant", et un élément englobant (comme `html` comparativement à `body`) est un "parent".
+Question nommenclature, ce qu'on a appelé une "boîte" est en fait un "élément" ou "tag" et les inscriptions sur la boîte (comme `style`) sont ses "propriétés". Un élément à l'intérieur d'un autre élément (comme `body` comparativement à `html`) est un "enfant", et un élément englobant (comme `html` comparativement à `body`) est un "parent".
+
+Ouvrir le fichier `index.html` avec un éditeur de texte comme VSCode et lire les commentaires.
