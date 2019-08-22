@@ -8,7 +8,7 @@ Une page web qui ne contient rien et ne fait rien, mais qui n'a pas d'erreur non
 
 Ouvrir le fichier `index.html` avec votre navigateur web.
 
-## Objectif
+## Commentaires
 
 Un fichier HTML est un fichier qui décrit la page web au navigateur. Le HTML n'est pas vraiment un langage de programmation ; c'est vraiment plutôt un fichier qui décrit la page web. Les fichiers HTML n'ont pas besoin d'être ouverts avec un programme spécial, contrairement à des fichiers Word, PowerPoint ou du genre. On peut les ouvrir avec le bloc-note (berk!), ou avec un éditeur pour programmation comme [VSCode](https://code.visualstudio.com) ou [Notepad++](https://notepad-plus-plus.org/).
 
