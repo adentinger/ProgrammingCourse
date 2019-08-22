@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <style>
+      .changer-apparence-texte {
+        /*
+          Change la police de caractère en Helvetica si possible,
+          sinon en Arial, sinon en sans-serif.
+        */
+        font-family: Helvetica, Arial, sans-serif;
+        /* Met le texte en taille 17 points. */
+        font-size: 17pt;
+        /* Met le texte en italique */
+        font-style: italic;
+      }
+
+      .texte-gras {
+        /* Met le texte en gras */
+        font-weight: bold;
+      }
+
+      .texte-centre {
+        /* Met le texte au centre */
+        text-align: center;
+      }
+
+      .contour-et-fond {
+        /*
+          Met une bordure en gris 50% (50% = 128 = 255÷2) de 2 pixels
+          d'épaisseur et qui donne l'impression de rentrer dans la page.
+        */
+        border: rgb(128, 128, 128) 2px inset;
+        /*
+          Met une image en arrière-plan. Il est par exemple possible
+          de spécifier que l'image doit être élargie pour correspondre
+          à l'élément dont elle est l'arrière-plan, mais on ne s'en souciera
+          pas ici.
+
+          De toute façon, quand on crée un site web de manière
+          professionnelle, on utilise de temps à autres des styles
+          déjà tout faits et qui ont une apparence moderne, plutôt que de
+          toujours tout faire soi-même.
+        */
+        background-image: url("https://www.freevirtualservers.com/assets/assets/images/unlimited-hosting/new-icons/domain-setup.png")
+      }
+
+      .grosse-marge-en-haut {
+        /* Met une marge en haut d'un élément. */
+        margin-top: 20%; /* 20% de la hauteur disponible */
+      }
+    </style>
+
+    <!--
+      Il est aussi possible (et même généralement préférable)
+      de mettre le code CSS dans un (ou plusieurs) fichier séparé
+      pour pouvoir le réutiliser dans plusieurs fichiers HTML.
+      Pour en importer plusieurs, simplement mettre plusieurs éléments
+      "link", mais avec un href différent.
+
+      Ne pas se préoccuper de: rel="stylesheet" type="text/css".
+      Juste savoir qu'il faut mettre ces deux propriétés pour
+      importer un fichier CSS. Par contre, la propriété "href"
+      est importante si on veut importer un fichier CSS séparé,
+      puisqu'elle définit le fichier à importer.
+
+      À noter que, comme on importe un fichier qui se situe dans le
+      même dossier que ce fichier, on peut simplement écrire
+      "<sous-dossier(s)>/<fichier CSS>" comme href.
+      Si on voulait importer un fichier CSS d'ailleurs sur Internet,
+      par exemple https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css,
+      alors on aurait mis
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1>Démonstration de styles de texte</h1>
+    <p>Aucun style</p>
+    <p class="changer-apparence-texte">"p" d'apparence différente</p>
+    <h1 class="changer-apparence-texte">"h1" d'apparence différente</h1>
+    <p class="contour-et-fond texte-centre texte-gras">contour,<br/>fond<br/>et<br/>centré</p>
+    <p>Paragraphe avec une <i>partie seulement</i> en italique, une <b>autre partie</b> partie en gras et <u>encore une autre</u> en souligné.</p>
+    <p class="style-defini-dans-un-fichier-separe">Paragraphe dont la classe CSS est définie dans un fichier séparé</p>
+
+    <h1>Démonstration d'autres éléments</h1>
+    <a href="https://google.com">Lien vers un site externe</a><br/>
+    <a href="https://google.com" target="_blank">Lien vers un site externe qui ouvre un nouvel onglet</a><br/>
+    <a href="autre-page.html">Lien vers un page dans le même dossier où se situe index.html</a><br/>
+    <a href="#autre-endroit-de-la-page">Lien vers un autre endroit de la page</a><br/>
+    <!-- Image prise d'internel -->
+    <img src="https://www.freevirtualservers.com/assets/assets/images/unlimited-hosting/new-icons/domain-setup.png"/><br/>
+    <!-- Image dans le dossier actuel -->
+    <img src="images/image-bonhomme-sourire.png"/>
+    <p id="autre-endroit-de-la-page">Autre endroit de la page</p>
+    <p class="grosse-marge-en-haut contour-et-fond">Paragraphe avec une grosse marge en haut, un contour et un fond</p>
+
+    <!-- Un tableau -->
+    <table>
+      <tr> <!-- "tr": ligne du tableau ("table row") -->
+        <td>Case 1</td> <!-- "td": case d'une ligne du tableau ("table data") -->
+        <td>Case 2</td>
+      </tr>
+      <tr>
+        <td>Case 3</td>
+        <td>Case 4</td>
+      </tr>
+    </table>
+  
+    <hr/> <!-- Une séparation -->
+
+    <!-- Un tableau dans lequel l'apparence du texte est changé -->
+    <table class="contour-et-fond">
+      <th>Colonne 1</th><th>Colonne 2</th>
+      <tr>
+        <td>Case 1</td>
+        <td>Case 2</td>
+      </tr>
+      <tr>
+        <td>Case 3</td>
+        <td>Case 4</td>
+      </tr>
+    </table>
+  
+    <hr/>
+
+    <!--
+      Page web à l'intérieur d'une page web.
+      La plupart des sites, comme google.com, ne permettent pas de le faire.
+    -->
+    <iframe src="https://tetris.com" width="100%"></iframe>
+  </body>
+</html>

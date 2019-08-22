@@ -1,0 +1,6 @@
+.style-defini-dans-un-fichier-separe {
+    /* Fait en sorte que l'élément soit arrondi. */
+    border-radius: 8px;
+    /* Met un contour noir de 1 pixel d'épaisseur */
+    border: 1px rgb(0, 0, 0) solid;
+}
