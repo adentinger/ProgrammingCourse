@@ -1,4 +1,4 @@
-# Page web `"Hello, World!"`
+# Page web de démonstration d'utilisation du HTML avec le CSS
 
 ## Description
 
