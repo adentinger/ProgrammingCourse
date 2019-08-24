@@ -30,13 +30,17 @@ Illustrons par quelques exemples de lignes code JavaScript. Notez que vous pouve
 
 La ligne suivante...
 
-    2+3;
+```javascript
+2+3;
+```
 
 ...demande au navigateur de calculer le résultat de 2+3. Facile! Pour autant, cette ligne ne fait rien puisqu'une fois que le navigateur a calculé 2+3, on ne lui dit pas de faire quoi que ce soit avec le résultat.
 
 Il serait peut-être plus intéressant de pouvoir voir le résultat de 2+3. C'est justement ce que fait cette ligne de code:
 
-    console.log(2+3);
+```javascript
+console.log(2+3);
+```
 
 Cette ligne commence déjà à avoir l'air compliquée ; il y a un `console`, un point, un `log` et des parenthèses qui entourent le `2+3`. Mais on peut oublier ça pour l'instant. Ce qui est important, c'est que cette ligne affiche ce qui est entre les parentèses (ici, `2+3`, donc `5`) dans la console du navigateur. On peut accéder à la console en ouvrant les outils développeur de son navigateur, comme dans l'image ci-dessous.
 
@@ -44,7 +48,9 @@ Cette ligne commence déjà à avoir l'air compliquée ; il y a un `console`, un
 
 À part des nombres, il y a d'autres valeurs que l'on peut obtenir et afficher en JavaScript. Par exemple, cette ligne dit d'écrire le texte `Hello, World!` dans la console:
 
-    console.log("Hello, World!");
+```javascript
+console.log("Hello, World!");
+```
 
 ![Le texte "Hello, World!" affiché dans la console][console_helloworld]
 
@@ -52,20 +58,24 @@ Nous verrons d'autres types de données lorsque nécessaire.
 
 Une dernière chose: en JavaScript, et dans beaucoup de langages, une "ligne de code" se termine au point-virgule, pas à la fin de la ligne. Donc, cette ligne de code...
 
-    console.log(2+3);
+```javascript
+console.log(2+3);
+```
 
 ...est équivalente à celle-ci...
 
-        console
-     .   
-           log
+```javascript
+    console
+ .
+       log
 
-            (
-                 2  +3
-                )
+        (
+             2  +3
+            )
 
 
-                ;
+            ;
+```
 
 ...mais est évidemment beaucoup moins lisible.
 

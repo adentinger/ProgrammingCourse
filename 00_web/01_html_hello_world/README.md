@@ -12,11 +12,13 @@ Ouvrir le fichier `index.html` avec votre navigateur web.
 
 Ici, il commence à y avoir certaines choses à expliquer, en particulier au sujet de la façon dont le fichier s'écrit. On pourrait comparer un fichier HTML à un ensemble de "boîtes", chaque boîte pouvant elle-même contenir d'autres boîtes, qui peuvent en contenir d'autres, etc. Par exemple, ceci...
 
-    <html>
-      <body>
-        <p style="color: #ff0000">Hello, World!</p>
-      </body>
-    </html>
+```html
+<html>
+  <body>
+    <p style="color: #ff0000">Hello, World!</p>
+  </body>
+</html>
+```
 
 ... devrait être vu comme voulant dire: _"Une boîte de type 'html' contient une boîte de type 'body' qui contient une boîte de type 'p', qui contient le texte 'Hello, World!'"_.
 

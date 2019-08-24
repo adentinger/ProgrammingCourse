@@ -16,9 +16,11 @@ Le fichier `index.html` de ce dossier est valide, mais ne décrit rien pour auta
 
 Notre fichier HTML ne contient rien de bien intéressant. Les lignes suivantes...
 
-    <!DOCTYPE HTML>
-    <html>
-    </html>
+```html
+<!DOCTYPE HTML>
+<html>
+</html>
+```
 
 ...sont requises dans tout fichier HTML.
 
