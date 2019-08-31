@@ -6,7 +6,7 @@ Une page web qui ne contient rien et ne fait rien, mais qui n'a pas d'erreur non
 
 ## Comment utiliser
 
-Ouvrir le fichier `index.html` avec votre navigateur web.
+Ouvrir le fichier `index.html` avec votre navigateur web: Ouvrir un nouvel onglet, puis faites CTRL+O et ouvrez le fichier `index.html` de ce dossier.
 
 ## Commentaires
 
