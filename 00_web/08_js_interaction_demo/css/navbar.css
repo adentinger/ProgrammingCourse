@@ -1,0 +1,167 @@
+/*
+    Ce fichier contient le code CSS pour la barre du haut.
+
+    Si nécessaire, se référer à
+    https://www.w3schools.com/cssref/css_selectors.asp pour une liste
+    exaustive de la manière d'écrire ce qui est avant les accolades
+    ouvrante ({) dans ce fichier.
+
+    NOTE: Je comprends environ 60% de ce qui est écrit ici ; j'ai cherché
+    comment faire sur internet jusqu'à ce que j'aie ce que je voulais.
+    C'est ce que ferait n'importe quel programmeur dans cette position,
+    et ce qu'il est amené à faire assez régulièrement. J'essaierai de
+    mettre quelques commentaires là où c'est important, mais la plupart
+    du CSS ici est juste une question de détails.
+ */
+
+/*
+    Les éléments de type "header" qui sont de classe "navbar". Il
+    n'y en a qu'un de toute façon, donc on aurait pu juste mettre
+    "header" (ce qui aurait compris tous les éléments de type "header),
+    au lieu de "header.navbar".
+ */
+header.navbar {
+    background: #1e2530;
+    height: 50px; /* Hauteur du header: 50 pixels */
+    overflow: hidden; /* Tous les éléments à l'intérieur du header qui
+                         en dépassent sont cachés. */
+
+    /* Pour dire comment sont positionnés les éléments dans le header */
+    display: flex;
+    flex-direction: row;
+
+    font-family: Lato,sans-serif; /* Change la police de caractères */
+    font-weight: bold; /* Met en gras le texte */
+    text-align: center; /* Centre le texte */
+}
+
+/*
+    Tous les éléments de type "div" qui sont directement à l'intérieur
+    d'un élément de type "header".
+ */
+header > div {
+    /* Pour dire comment positionner les liens dans ce div */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Les élément de type "a" qui sont de classe "logo" */
+header a {
+    /* Pour dire comment positionner les éléments qui sont à
+    l'intérieur de l'élément "a" */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*
+    Les élément de type "a" qui sont de classe "logo", que le lien vers
+    lesquels ils pointent aient été visités ou non.
+ */
+header a:any-link {
+    text-decoration: none; /* Pas de soulignement */
+    color: #ffffff;
+}
+
+/*
+    --------------------
+    -       Logo       -
+    --------------------
+*/
+
+/* Les élément de type "div" qui sont de classe "logo" */
+div.logo {
+    height: 100%; /* La hauteur de cet élément est 100% de la hauteur
+                     disponible, c'est-à-dire la même hauteur que le
+                     header */
+    border-right: 1px #2c3645 solid;
+    margin: 0; /* Aucune marge à l'extérieur de l'élément */
+    padding: 0 16px 0 16px; /* Une marge à l'intérieur de l'élément de:
+                               0 pixels en haut, 16 pixels à droite,
+                               0 pixels en bas, 16 pixels à gauche. */
+}
+
+/* Les éléments de type "p" qui sont de classe "logo" */
+p.logo {
+    flex: 1;
+    margin: 2px 4px 2px 4px;
+}
+
+/* Les éléments de type "img" qui sont de classe "logo" */
+img.logo {
+    width : 32px;
+    height: 32px;
+}
+
+/*
+    --------------------
+    -       Liens      -
+    --------------------
+*/
+
+/* Les éléments de type "div" qui sont de classe "liens" */
+div.liens {
+    /* Pour centrer le div qui contient les liens */
+    position: absolute;
+    height: 50px;
+    width: 30%;
+    left: 50%;
+    margin: 0 0 0 -15%;
+}
+
+/* Les éléments de type "a" qui sont de classe "liens" */
+a.liens {
+    height: 100%;
+    color: #e0e0e0 !important; /* Couleur du texte: un genre de gris clair */
+    text-decoration: none; /* Pas de soulignement */
+    padding: 0 10px 0 10px;
+}
+/*
+    Les éléments de type "a" qui sont de classe "liens"
+    lorsqu'on les survole avec la souris.
+ */
+a.liens:hover {
+    color: #ffffff !important; /* Couleur du texte: blanc */
+}
+/*
+    Les éléments de type "a" qui sont de classe "liens" qui sont
+    précédés d'un élément de type "a" qui est de classe "liens.
+ */
+a.liens + a.liens {
+    border-left: 1px #2c3645 solid;
+}
+
+/*
+    --------------------
+    -  (Faux) Compte   -
+    --------------------
+*/
+
+/* Les éléments de type "div" qui sont de classe "utilisateur" */
+div.utilisateur {
+    height: 50px;
+    border-left: 1px #2c3645 solid;
+
+    /* Pour placer à droite le div du compte utilisateur */
+    margin-left: auto;
+}
+
+/* Les éléments de type "a" qui sont de classe "utilisateur" */
+a.utilisateur {
+    padding: 0 16px 0 16px; /* Une marge à l'intérieur de l'élément de:
+                               0 pixels en haut, 16 pixels à droite,
+                               0 pixels en bas, 16 pixels à gauche. */
+}
+
+/* Les éléments de type "img" qui sont de classe "utilisateur" */
+img.utilisateur {
+    width : 32px;
+    height: 32px;
+
+    border: 1px #575c68 solid; /* Pour donner une bordure */
+    border-radius: 5px; /* Pour donner des contours arrondis à la bordure */
+
+    background: #343a47;
+    margin: 0 10px 0 0;
+}

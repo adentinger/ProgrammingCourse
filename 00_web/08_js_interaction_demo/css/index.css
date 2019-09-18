@@ -1,0 +1,18 @@
+/*
+    Ce fichier contient du CSS pour la page d'accueil.
+
+    Si nécessaire, se référer à
+    https://www.w3schools.com/cssref/css_selectors.asp pour une liste
+    exaustive de la manière d'écrire ce qui est avant les accolades
+    ouvrante ({) dans ce fichier.
+ */
+
+/*
+    Les éléments de type "a" qui sont de classe "index", que le
+    lien aie déjà été visité ou non
+ */
+a.index {
+    text-decoration: none; /* Pas de soulignement */
+    background: #f0edce;
+    font-size: 15pt;
+}

@@ -1,0 +1,39 @@
+/*
+    Ce fichier contient du CSS pour le corps des pages.
+
+    Si nécessaire, se référer à
+    https://www.w3schools.com/cssref/css_selectors.asp pour une liste
+    exaustive de la manière d'écrire ce qui est avant les accolades
+    ouvrante ({) dans ce fichier.
+ */
+
+/*
+    Les éléments de type "body" se font appliquer ces propriétés CSS.
+*/
+body {
+    margin: 0px;
+}
+
+/* Les éléments de type "main" */
+main {
+    margin: 0 8px 0 8px; /* Marge: 0 en haut, 8 pixels à droite, 0 en bas, 8 pixels à gauche */
+}
+
+/* Les éléments de type "p" */
+p {
+    text-align: justify;
+}
+
+/*
+    Les éléments de type "h1"
+ */
+h1 {
+    color: #000080; /* 0% rouge, 0% vert, 80 bleu en hexadécimal = 128 bleu = 50%*255 bleu = 50% bleu, donc un genre de bleu foncé */
+    width: fit-content;
+}
+/*
+    Les éléments de type "h1" quand survolés par la souris.
+ */
+h1:hover {
+    color: #800000; /* 80 rouge en hexadécimal = 128 rouge = 50%*255 rouge = 50% rouge, 0% vert, 0% bleu, donc un genre de rouge foncé */
+}

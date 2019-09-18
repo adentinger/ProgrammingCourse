@@ -1,0 +1,63 @@
+/*
+    Ce fichier contient du CSS pour la page de commandes.
+
+    Si nécessaire, se référer à
+    https://www.w3schools.com/cssref/css_selectors.asp pour une liste
+    exaustive de la manière d'écrire ce qui est avant les accolades
+    ouvrante ({) dans ce fichier.
+ */
+
+/* Les éléments de type "table" */
+table {
+    border: #000000 1px solid;
+    text-align: center;
+    background: #ebe5ca;
+}
+
+/* Un élément de classe CSS "num" prend 20% de l'espace horizontal. */
+.num {
+    width: 20%;
+}
+
+/* Un élément de classe CSS "nom" prend 20% de l'espace horizontal. */
+.nom {
+    width: 20%;
+}
+
+/* Un élément de classe CSS "desc" prend 60% l'espace horizontal. */
+.desc {
+    width: 60%;
+}
+
+/* Définition d'une classe CSS qui apparaît et disparaît en fondu. */
+
+/* Animation pour le fondu d'apparition */
+@keyframes animation-apparition-fondu {
+    from {
+        opacity: 0;
+    };
+    to {
+        opacity: 1;
+    };
+}
+
+/*
+    ".fondu.cache" signifique ce tous les éléments qui ont à la fois la classe
+    "fondu" et la classe "cache" se font appliquer ces propriétés CSS.
+*/
+.fondu.cache {
+    opacity: 0;
+}
+
+.fondu {
+    /* fondu utilise l'animation "animation-apparition-fondu" */
+    animation: animation-apparition-fondu;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+
+    /* Si l'opacité de l'élément change, alors faire un effet de transition. */
+    transition: opacity 0.8s ease-out;
+
+    /* Par défaut, l'opacité d'un élément de classe fondu est à 100% */
+    opacity: 1;
+}
