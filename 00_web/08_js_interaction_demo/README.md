@@ -1,4 +1,4 @@
-# Page web de démonstration initiale d'une page web (pseudo-)interactive en JavaScript
+# Page web de démonstration initiale d'un site web (pseudo-)interactif
 
 ## Description
 
@@ -16,7 +16,7 @@ Jusqu'à présent, nous avons vu plusieurs outils dont nous aurons besoin pour �
 
 Même s'il nous manque encore plusieurs concepts, dans cet exemple, nous verrons ce que nous serons très bientôt capables de faire. Mieux, peut-être qu'en regardant le code de cet exemple, on pourra prendre de l'avance sur les prochains exemples et comprendre une partie des prochains concepts. Ce n'est pas grave si on ne comprend pas encore tout de cet exemple.
 
-À noter que je n'ai personnellement aucun intérêt à rendre la page "belle" et "intuitive". C'est du travail fastidieux que je ne connais pas beaucoup et que je n'aime pas beaucoup non plus. Les développeurs prennent généralement des morceaux de code tout faits pour faire de beaux sites web, ce que nous ne faisons pas ici pour l'instant parce que l'on ne veut pas mélanger les bases que nous apprenons avec ce que le code qu'on utiliserait nous permettrait de faire.
+À noter que je n'ai personnellement aucun intérêt à rendre la page "belle" et "intuitive". C'est du travail fastidieux que je ne connais pas beaucoup et que je n'aime pas beaucoup non plus. Les développeurs prennent généralement des morceaux de code tout faits pour faire de beaux sites web, ce que nous ne faisons pas ici pour l'instant parce que l'on ne veut pas mélanger les bases, que nous apprenons, avec ce que le code que l'on importerait nous permettrait de faire.
 
 ### Explication de l'exemple
 
