@@ -1,8 +1,8 @@
-# Page web de démonstration initiale d'un site web (pseudo-)interactif
+# Site web de démonstration d'un site web (pseudo-)interactif
 
 ## Description
 
-Une page web qui démontre comment faire interagir du JavaScript avec une page web.
+Un site web qui démontre notamment comment faire interagir du JavaScript avec une page web.
 
 ## Comment utiliser
 
