@@ -24,6 +24,8 @@ Lorsque nous parlerons d'Electron, nous verrons comment l'installer, mais, pour 
 
 À noter qu'avec VSCode, on peut lire plus facilement les fichiers `README.md` en les ouvrant puis en faisant CTRL+SHIFT+V, ou en faisant un clic droit sur l'onglet de ce fichier et en sélectionnant _"Open preview"_. Sinon, on peut aussi les lire en cliquant dessus sur [GitHub](https://github.com/AnthonyD973/ProgrammingCourse).
 
+Je voudrais aussi mentionner qu'**il est possible que les pages et sites web ne s'affichent pas bien sur des navigateurs autres que Google Chrome, ou alors des navigateurs trop vieux. Je pense qu'ils fonctionnent comme attendu sous Firefox, mais je pense aussi qu'il y aura des problèmes sous Safari et d'autres navigateurs.
+
 ## Comment suivre ce tutoriel ?
 
 1) Installer un éditeur de texte, comme expliqué ci-dessus.
