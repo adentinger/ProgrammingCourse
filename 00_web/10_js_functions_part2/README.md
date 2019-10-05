@@ -86,9 +86,7 @@ Pour chacun des énoncés suivants, on se pose les questions suivantes:
 
 - Comment l'écrire?
 
-À noter qu'écrire la fonction correspondant aux énoncés 3 et 4 est plutôt difficile si l'on n'a pas l'habitude d'écrire du code, mais on peut au minimum déterminer à partir de l'énoncé si la fonction doit prendre des paramètres et/ou doit avoir une valeur de retour. Il serait quand-même intéressant d'essayer de l'écrire, puisqu'une solution n'est pas "fournie" quand on essaie de faire son propre site web.
-
-Si l'on arrive pas à écrire le code, comprendre la solution fournie plus bas puis essayer de voir si on a compris en essayant de la réécrire.
+À noter qu'écrire la fonction correspondant aux énoncés 3 et 4 est plutôt difficile si l'on n'a pas l'habitude d'écrire du code, alors ne pas se laisser décourager si on a du mal à voir comment l'écrire. On peut se contenter à partir de l'énoncé de comprendre si la fonction doit prendre des paramètres et/ou doit avoir une valeur de retour. Le code qui résoud l'énoncé est quand-même fourni pour que l'on puisse le lire et essayer de comprendre comment il fonctionne.
 
 #### E1 - Énoncé
 
@@ -102,10 +100,10 @@ On veut écrire une fonction qui affiche l'entier qui précède 1000.
 
 On veut écrire une fonction qui vérifie si un entier `n` donné est premier, c'est-à-dire si aucun entier entre `2` et `n-1` ne divise `n`.
 
-**Aide**: La fonction suivante vérifie si `d` divise `n`, et retourne `true` si oui, `false` sinon. Supposer que vous pouvez l'utiliser directement pour écrire votre fonction.
+**Note**: La fonction suivante vérifie si `d` divise `n`, et retourne `true` si oui, `false` sinon. La solution à cet énoncé, plus bas, suppose que cette fonction a été définie quelque part dans le code.
 
 ```javascript
-function divise(n, d) {
+function divise(d, n) {
     return (n % d) === 0;
 }
 ```
@@ -114,7 +112,9 @@ function divise(n, d) {
 
 On veut écrire une fonction qui détermine le plus petit entier parfait, c'est-à-dire le plus petit entier `n` dont la somme des entiers plus petits que `n` et qui divisent `n` est égale à `n`.
 
-**Aide**: On peut utiliser la fonction `divise` de l'énoncé précédent.
+Par exemple, les diviseurs de 28 sont 1, 2, 4, 7, 14 et 28. La somme des diviseurs de 28 qui sont plus petits que 28 est donc `1 + 2 + 4 + 7 + 14`, ce qui vaut aussi 28. 28 est donc un entier parfait.
+
+**Note**: La solution à cet énoncé, plus bas, utilise aussi la fonction `divise`.
 
 ### Solutions
 
@@ -166,7 +166,7 @@ function estPremier(n) {
     // Pour chaque entier entre 2 et n-1...
     for (d = 2; d <= n - 1; d = d + 1) {
         // ...si d divise n...
-        if (divise(n, d)) {
+        if (divise(d, n)) {
             // ...alors on a trouvé un diviseur de n.
             aTrouveUnDiviseur = true;
         }
@@ -193,7 +193,7 @@ function estPremier(n) {
         // Pour chaque entier entre 2 et n-1...
         for (d = 2; d <= n - 1; d = d + 1) {
             // ...si d divise n...
-            if (divise(n, d)) {
+            if (divise(d, n)) {
                 // ...alors on a trouvé un diviseur de n.
                 aTrouveUnDiviseur = true;
             }
@@ -229,7 +229,7 @@ function plusPetitEntierParfait() {
         // Pour chaque entier entre 1 inclusivement et valeurEssayee exclusivement...
         for (d = 1; d < valeurEssayee; d = d + 1) {
             // ...si d divise valeurEssayee, alors...
-            if (divise(valeurEssayee, d)) {
+            if (divise(d, valeurEssayee)) {
                 // ...on ajoute d à la somme des diviseurs trouvés.
                 sommeDesDiviseurs = sommeDesDiviseurs + d;
             }
